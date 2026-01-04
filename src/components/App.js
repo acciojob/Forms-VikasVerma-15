@@ -8,19 +8,20 @@ const App = () => {
   return (
     <Router>
       <nav>
-        <Link id="form-link" to="/">Form</Link>{" | "}
-        <Link id="form-ref-link" to="/ref">Form Ref</Link>{" | "}
-        <Link id="form-state-link" to="/state">Form State</Link>
+        <Link id="form-link" to="/form">Form</Link>{" | "}
+        <Link id="form-ref-link" to="/form-ref">Form Ref</Link>{" | "}
+        <Link id="form-state-link" to="/form-state">Form State</Link>
       </nav>
 
       <Routes>
-        <Route path="/" element={<Form />} />
-        <Route path="/ref" element={<FormRef />} />
-        <Route path="/state" element={<FormState />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="/form-ref" element={<FormRef />} />
+        <Route path="/form-state" element={<FormState />} />
       </Routes>
     </Router>
   );
 };
 
 export default App;
+
 
